@@ -132,7 +132,7 @@ def login_page():
     if st.button("进入对话界面"):
         if api_key:
             # 将密钥存储到 session 状态
-            st.session_state['DEESEEK_API_KEY'] = "sk-df24b58c2a46492f9092e6ff8233f6a0"
+            st.session_state['DEESEEK_API_KEY'] = api_key
             st.session_state['logged_in'] = True  # 设置已登录标志
             st.session_state['login_successful'] = True  # 登录成功的标志
             # 页面刷新逻辑
